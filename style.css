@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -408,12 +408,16 @@ opacity: 0;
   font-size: 2rem;
   color: white;
   margin-bottom: 10px;
+  text-align: center;
   text-transform: uppercase;
+  
+
 }
 
-#services .service-item p {
+#services .service-item ul li {
   color: white;
   text-align: left;
+  line-height: 20px;
 }
 
 #services .service-top {
@@ -434,14 +438,17 @@ opacity: 0;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  flex-direction: column;
+  flex-direction:column;
+
   padding: 30px;
   border-radius: 10px;
   margin: 10px 5%;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  height: 300px;
 }
+
 
 #services .service-item::after {
   content: "";
@@ -452,7 +459,7 @@ opacity: 0;
   width: 100%;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   opacity: 0.9;
-  z-index: -1;
+  z-index: -1;  
 }
 
 @media only screen and (min-width: 768px) {
