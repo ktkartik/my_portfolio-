@@ -667,6 +667,53 @@ opacity: 0;
   }
 }
 
+.achievements-gallery {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff; /* optional: dark background for contrast */
+}
+
+.achievements-gallery h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.achievement-card {
+  background: #111111;
+  color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.achievements-gallery .section-title{
+  margin-bottom: 100px;
+}
+.achievement-card img {
+  width: 100%;
+  height: 300px;
+ background-size: cover;/* keeps image proportional */
+}
+
+.achievement-card p {
+  padding: 15px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(48, 48, 48, 0.5);
+}
+
+
 /* contact section */
 #contact .contact {
   flex-direction: column;
